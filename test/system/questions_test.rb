@@ -23,6 +23,12 @@ class QuestionsTest < ApplicationSystemTestCase
     fill_in 'question', with: 'I am going to work right now!'
     click_on 'Ask'
     assert_text 'Great!'
+  end
+  test 'saying what should i do ? ' do
+    visit ask_url
+    fill_in 'question', with: 'what should i do ?'
+    click_on 'Ask'
+    assert_text 'Silly question, get dressed and go to work!'
     take_screenshot
   end
 end
