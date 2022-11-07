@@ -16,3 +16,11 @@
 .title:hover {
   color: orangered;
 }
+.ask {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+#question {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
