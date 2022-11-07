@@ -29,6 +29,12 @@ class QuestionsTest < ApplicationSystemTestCase
     fill_in 'question', with: 'what should i do ?'
     click_on 'Ask'
     assert_text 'Silly question, get dressed and go to work!'
+  end
+  test 'saying WHAT SHOULD I DO? all capital letters ' do
+    visit ask_url
+    fill_in 'question', with: 'WHAT SHOULD I DO?'
+    click_on 'Ask'
+    assert_text 'I can feel your motivation! Silly question, get dressed and go to work!'
     take_screenshot
   end
 end
