@@ -1,1 +1,9 @@
-
+<div class="h-100 p-3 bg-light border rounded-3 my-3 shadow">
+  <h4> -<%= @final_answer.keys[0]%></h4>
+  <p> <%= @final_answer["You"]%> </p>
+</div>
+<div class="h-100 p-3  border rounded-3 my-3 shadow-sm bg-warning bg-gradient" style="--bs-bg-opacity: .5">
+  <h4> -<%= @final_answer.keys[1] %></h4>
+  <p> <%= @final_answer["Your Coach"]%> </p>
+</div>
+<%= link_to 'ask a new question', ask_path , class: "btn btn-primary"%>
